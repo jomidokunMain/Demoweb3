@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/styless1.css" />
+  </head>
+  <body>
+    <header class="header site-4 division-site-type narrow_logo">
+      <div class="hamburger-logo-wrapper">
+        <div class="logo-wrapper site-4">
+          <a
+            href="https://umdearborn.edu/cecs"
+            aria-label="Visit the ECE website home page"
+            ><img
+              src="static/images/LOres.png"
+              alt="Electrical and Computer Engineering"
+          /></a>
+        </div>
+        <div
+          id="hamburger"
+          class="hamburger"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+          aria-role="button"
+        >
+          <span id="hamburger-icon"
+            ><img
+              src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/menu.svg"
+              alt="menu"
+            />
+            MENU
+          </span>
+          <a
+            href="#"
+            class="search"
+            id="search-button-mobile"
+            aria-label="Open a search form"
+          >
+            <span
+              class="search-text"
+              id="search-button-mobile-text"
+              aria-role="button"
+              aria-label="Open a search form"
+              >Search</span
+            >
+            <img
+              src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/search.svg"
+              alt="Search"
+              id="eecs-search-svg-mobile"
+            />
+            <img
+              src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/noun_Close_330124.svg"
+              alt="Close"
+              id="eecs-close-svg-mobile"
+              class="now-you-dont"
+            />
+          </a>
+          <script
+            async=""
+            src="https://cse.google.com/cse.js?cx=015640634156563992032:rlhplrfpn2u"
+          ></script>
+          <div id="google-top-search-mobile">
+            <div
+              class="gsc-control-searchbox-only gsc-control-searchbox-only-en"
+              dir="ltr"
+            >
+              <form
+                class="gsc-search-box gsc-search-box-tools"
+                accept-charset="utf-8"
+              >
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  class="gsc-search-box"
+                >
+                  <tbody>
+                    <tr>
+                      <td class="gsc-input">
+                        <div class="gsc-input-box" id="gsc-iw-id1">
+                          <table
+                            cellspacing="0"
+                            cellpadding="0"
+                            role="presentation"
+                            id="gs_id50"
+                            class="gstl_50 gsc-input"
+                            style="width: 100%; padding: 0px"
+                          >
+                            <tbody>
+                              <tr>
+                                <td id="gs_tti50" class="gsib_a">
+                                  <input
+                                    autocomplete="off"
+                                    type="text"
+                                    size="10"
+                                    class="gsc-input"
+                                    name="search"
+                                    title="search"
+                                    aria-label="search"
+                                    id="gsc-i-id1"
+                                    dir="ltr"
+                                    spellcheck="false"
+                                    placeholder="Search"
+                                    style="
+                                      width: 100%;
+                                      padding: 0px;
+                                      border: none;
+                                      margin: 0px;
+                                      height: auto;
+                                      background: url('https://www.google.com/cse/static/images/1x/en/branding.png')
+                                        left center no-repeat rgb(255, 255, 255);
+                                      outline: none;
+                                    "
+                                  />
+                                </td>
+                                <td class="gsib_b">
+                                  <div class="gsst_b" id="gs_st50" dir="ltr">
+                                    <a
+                                      class="gsst_a"
+                                      href="javascript:void(0)"
+                                      title="Clear search box"
+                                      role="button"
+                                      style="display: none"
+                                      ><span
+                                        class="gscb_a"
+                                        id="gs_cb50"
+                                        aria-hidden="true"
+                                        >×</span
+                                      ></a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                      <td class="gsc-search-button">
+                        <button class="gsc-search-button gsc-search-button-v2">
+                          <svg width="13" height="13" viewBox="0 0 13 13">
+                            <title>search</title>
+                            <path
+                              d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </td>
+                      <td class="gsc-clear-button">
+                        <div class="gsc-clear-button" title="clear results">
+                          &nbsp;
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-wrapper">
+        <nav class="utility-nav">
+          <ul class="utility-menu site-4">
+            <li class="utility-menu-item">
+              <a
+                class="utility-menu-link"
+                href="https://github.com/jomidokunMain/pose_mech"
+                aria-label="Visit the EECS website"
+                >Paper</a
+              >
+              <a
+                class="utility-menu-link-mobile"
+                href="https://github.com/jomidokunMain/pose_mech"
+                aria-label="Visit the EECS website"
+                >Paper</a
+              >
+            </li>
+            <li class="utility-menu-item">
+              <a
+                class="utility-menu-link"
+                href="https://github.com/jomidokunMain/pose_mech"
+                aria-label="Visit the ECE website"
+                >FIND GITHUB</a
+              >
+              <a
+                class="utility-menu-link-mobile"
+                href="https://github.com/jomidokunMain/pose_mech"
+                aria-label="Visit the ECE website"
+                >FIND GITHUB</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="search"
+            id="search-button"
+            aria-label="Open a search form"
+          >
+            <span
+              class="search-text"
+              id="search-button-text"
+              aria-role="button"
+              aria-label="Open a search form"
+              >Search</span
+            >
+            <img
+              src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/search.svg"
+              alt="Search"
+              id="eecs-search-svg"
+            />
+            <img
+              src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/noun_Close_330124.svg"
+              alt="Close"
+              id="eecs-close-svg"
+              class="now-you-dont"
+            />
+          </a>
+
+          <script
+            async=""
+            src="https://cse.google.com/cse.js?cx=015640634156563992032:rlhplrfpn2u"
+          ></script>
+          <div id="google-top-search">
+            <div
+              class="gsc-control-searchbox-only gsc-control-searchbox-only-en"
+              dir="ltr"
+            >
+              <form
+                class="gsc-search-box gsc-search-box-tools"
+                accept-charset="utf-8"
+              >
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  class="gsc-search-box"
+                >
+                  <tbody>
+                    <tr>
+                      <td class="gsc-input">
+                        <div class="gsc-input-box" id="gsc-iw-id2">
+                          <table
+                            cellspacing="0"
+                            cellpadding="0"
+                            role="presentation"
+                            id="gs_id51"
+                            class="gstl_51 gsc-input"
+                            style="width: 100%; padding: 0px"
+                          >
+                            <tbody>
+                              <tr>
+                                <td id="gs_tti51" class="gsib_a">
+                                  <input
+                                    autocomplete="off"
+                                    type="text"
+                                    size="10"
+                                    class="gsc-input"
+                                    name="search"
+                                    title="search"
+                                    aria-label="search"
+                                    id="gsc-i-id2"
+                                    dir="ltr"
+                                    spellcheck="false"
+                                    style="
+                                      width: 100%;
+                                      padding: 0px;
+                                      border: none;
+                                      margin: 0px;
+                                      height: auto;
+                                      background: url('https://www.google.com/cse/static/images/1x/en/branding.png')
+                                        left center no-repeat rgb(255, 255, 255);
+                                      outline: none;
+                                    "
+                                  />
+                                </td>
+                                <td class="gsib_b">
+                                  <div class="gsst_b" id="gs_st51" dir="ltr">
+                                    <a
+                                      class="gsst_a"
+                                      href="javascript:void(0)"
+                                      title="Clear search box"
+                                      role="button"
+                                      style="display: none"
+                                      ><span
+                                        class="gscb_a"
+                                        id="gs_cb51"
+                                        aria-hidden="true"
+                                        >×</span
+                                      ></a
+                                    >
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                      <td class="gsc-search-button">
+                        <button class="gsc-search-button gsc-search-button-v2">
+                          <svg width="13" height="13" viewBox="0 0 13 13">
+                            <title>search</title>
+                            <path
+                              d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </td>
+                      <td class="gsc-clear-button">
+                        <div class="gsc-clear-button" title="clear results">
+                          &nbsp;
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <nav class="main-menu-nav">
+          <ul id="main-menu" class="main-menu">
+            <li
+              id="menu-item-531"
+              class="has-children menu-item-531 obj-39 objp-0 main-menu-item"
+            >
+              <a href="home.html" class="main-menu-link" class="active">Home</a
+              ><button class="arrow-button"></button>
+            </li>
+            <li
+              id="menu-item-521"
+              class="has-children menu-item-52 obj-43 objp-0 main-menu-item"
+            >
+              <a href="team.html" class="main-menu-link">Research Team</a
+              ><button class="arrow-button"></button>
+            </li>
+            <li
+              id="menu-item-3811"
+              class="has-children menu-item-381 obj-380 objp-0 main-menu-item"
+            >
+              <a href="#demo" class="main-menu-link">Project Demo</a
+              ><button class="arrow-button"></button>
+              <ul class="main-menu-child">
+                <li
+                  id="menu-item-465"
+                  class="menu-item-465 obj-455 objp-380 main-menu-item"
+                >
+                  <a href="parent2/leaning.html" class="main-menu-link"
+                    >50<sup>th </sup>percentile</a
+                  >
+                </li>
+                <li
+                  id="menu-item-508"
+                  class="menu-item-508 obj-494 objp-380 main-menu-item"
+                >
+                  <a href="parent1/leaning.html" class="main-menu-link"
+                    >95<sup>th </sup>percentile</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              id="menu-item-49"
+              class="has-children menu-item-49 obj-46 objp-0 main-menu-item"
+            >
+              <a href="about.html" class="main-menu-link">About</a
+              ><button class="arrow-button"></button>
+            </li>
+            <li>
+              <form class="mobile-search" role="search">
+                <input
+                  class="mobile-search-field"
+                  type="search"
+                  id="mobile-search"
+                  placeholder="search"
+                  name="q"
+                /><input class="mobile-search-submit" type="submit" value="" />
+              </form>
+            </li>
+            <li class="dept-menu main-menu-item eecs-dept-menu">
+              <a href="https://eecs.engin.umich.edu" class="main-menu-link abc"
+                >Electrical Engineering &amp; Computer Science</a
+              >
+            </li>
+            <li class="dept-menu main-menu-item cse-dept-menu">
+              <a href="https://cse.engin.umich.edu" class="main-menu-link abc"
+                >Computer Science &amp; Engineering</a
+              >
+            </li>
+            <li class="dept-menu main-menu-item ece-dept-menu">
+              <a href="https://umdearborn.edu/cecs" class="main-menu-link abc"
+                >Electrical &amp; Computer Engineering</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- <header class="top-section">
+      <nav class="top-navbar">
+        <div class="logo2">
+          <img src="static/images/log_inprog.png" alt="Logo" />
+        </div>
+        <ul class="main-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="sub-nav">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="static/images/cecs.png" alt="Logo" />
+        </div>
+      </nav>
+    </header> -->
+
+    <main>
+      <div class="main-content">
+        <p class="main-centered-text">AI-Empowered Digital Human Modeling</p>
+        <div class="main-logo">
+          <img src="static/webimage/FullLogo.png" alt="Main Logo" />
+          <p class="logo-text">
+            Revolutionizing Occupational Safety Improving Exoskeleton Design for
+            Injured Workers
+          </p>
+        </div>
+        <section class="scroll-section">
+          <!-- Add your background image here -->
+          <div class="text-section">
+            <h1>About the Project</h1>
+            <p>
+              Our pioneering project harnesses the potential of AI-empowered
+              Digital Human Models, integrating cutting-edge technologies like
+              computer vision, to revolutionize exoskeleton design for workers
+              returning to their jobs after injuries. By creating precise and
+              dynamic digital representations of individuals, our approach
+              allows for tailored exoskeleton customization, ensuring ergonomic
+              support and improved biomechanics. We're shaping the future of
+              rehabilitation, with AI-driven DHMs at the forefront, enabling
+              safer and more effective return-to-work strategies for individuals
+              with previous injuries. Join us in redefining workplace safety and
+              worker well-being through this transformative project.
+            </p>
+            <div class="text-section2">
+              <p>Key Features</p>
+              <div class="grid-container">
+                <div class="grid-item">AI in Digital Human Modeling</div>
+                <div class="grid-item1">
+                  Discover how AI-driven DHMs employ computer vision and other
+                  AI techniques to create accurate and dynamic digital
+                  representations of individuals, accounting for their unique
+                  anatomical and physiological attributes.
+                </div>
+                <div class="grid-item">
+                  Exoskeleton Design and Customization
+                </div>
+                <div class="grid-item1">
+                  Learn how AI-empowered DHMs are leveraged to customize
+                  exoskeletons to the specific needs and physical limitations of
+                  workers with previous injuries.
+                </div>
+                <div class="grid-item">Advance Analysis</div>
+                <div class="grid-item1">
+                  Explore how AI technology aids in real-time biomechanical
+                  analysis, ensuring that exoskeletons are ergonomically
+                  designed to support and enhance natural movements.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- <div id="eecs-wrapper">
+        <div id="eecs-left-menu">
+          <div class="sidebar-bar"></div>
+          <h2 class="sidebar-title">
+            <a href="https://umdearborn.edu/cecs/culture">CultureTHRZ</a>
+          </h2>
+          <nav class="eecs-sidebar-menu-nav">
+            <ul id="culture-menu" class="eecs-sidebar-menu">
+              <li
+                id="menu-item-5045"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5045 obj-5043 objp-42"
+              >
+                <a
+                  href="https://umdearborn.edu/cecs/culture/vision-mission-and-values/"
+                  >Vision, Mission, and Values</a
+                >
+              </li>
+              <li
+                id="menu-item-5064"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5064 obj-5061 objp-42"
+              >
+                <a href="https://umdearborn.edu/cecs/culture/ece-cid/"
+                  >ECE Committee for an Inclusive Department</a
+                >
+              </li>
+              <li
+                id="menu-item-5046"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5046 obj-3085 objp-42"
+              >
+                <a
+                  href="https://umdearborn.edu/cecs/culture/community-building-student-groups/"
+                  >Community Building Student Groups</a
+                >
+              </li>
+              <li
+                id="menu-item-5047"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5047 obj-2474 objp-42"
+              >
+                <a href="https://umdearborn.edu/cecs/culture/cultural-events/"
+                  >Cultural &amp; Diversity Events</a
+                >
+              </li>
+              <li
+                id="menu-item-5049"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5049 obj-3086 objp-42"
+              >
+                <a href="https://umdearborn.edu/cecs/culture/dei-resources/"
+                  >DEI Resources</a
+                >
+              </li>
+              <li
+                id="menu-item-5330"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5330 obj-3087 objp-42"
+              >
+                <a href="https://umdearborn.edu/cecs/culture/student-support/"
+                  >DEI Funding Support</a
+                >
+              </li>
+              <li
+                id="menu-item-5333"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5333 obj-5332 objp-42"
+              >
+                <a
+                  href="https://umdearborn.edu/cecs/culture/diversity-and-outreach/"
+                  >Diversity &amp; Outreach Stories</a
+                >
+              </li>
+              <li
+                id="menu-item-5336"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5336 obj-5067 objp-42"
+              >
+                <a href="https://umdearborn.edu/cecs/culture/reporting/"
+                  >Reporting/Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="eecs-main">
+          <div class="div-bread-bag">
+            <a href="https://umdearborn.edu/cecs" rel="nofollow">Home</a
+            ><span class="div-bread-delim"> &gt; </span>Culture
+          </div>
+
+          <div
+            style="
+              background-image: url(https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2022/02/culture-cover-1714x704-1.jpg);
+            "
+            class="wp-block-cbd-div-cover-block-div-cover divcover fadein fadein--up viewport-display visible is-style-divcover-left-bottom"
+          >
+            <div class="divcover_url">
+              <div class="container">
+                <div class="divcover_wrapper">
+                  <h1 class="divcover_quote">ECE Culture</h1>
+                  <p class="divcover_cite"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="is-style-indented">
+            We believe that real solutions can only be found when people from
+            all identities and walks of life have seats at the table and
+            opportunities to lead. We are committed to ensuring our environment
+            is one that celebrates diversity, equity, and inclusion for all
+            members of the ECE and U-M community. Join us in making this a
+            community where we lift each other up.
+          </p>
+
+          <div class="eecs-card-row fadein fadein--up viewport-display visible">
+            <div class="eecs-card-row-card eecs-card-row-3">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/10/group-roof-655x367.jpg"
+                alt="Grid Alternatives for Sustainable Energy"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-00274C eecs-card-row-col-1'"
+              >
+                <h2>Vision, Mission, and Values</h2>
+                <div>
+                  <p>
+                    Learn more about our commitment to fostering an environment
+                    of compassion and excellence.
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/vision-mission-and-values/"
+                      data-type="page"
+                      data-id="5043"
+                      >Vision, Mission, and Values Statement &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="eecs-card-row-card eecs-card-row-3">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/09/student-resources-655x367.jpg"
+                alt="Students at booth for CEDO"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-D86018 eecs-card-row-col-2'"
+              >
+                <h2>Contact us</h2>
+                <div>
+                  <p>
+                    ECE is committed to building a more inclusive and supportive
+                    environment that will welcome people from all identities.
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/ece-cid/"
+                      data-type="page"
+                      data-id="5061"
+                      >ECE Committee for an Inclusive Department &gt;</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/reporting/"
+                      data-type="page"
+                      data-id="5067"
+                      >Reporting/Contacts &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="eecs-card-row-card eecs-card-row-3">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/07/NSBE2.jpg"
+                alt="NSBE students at graduation"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-FFCB05 eecs-card-row-col-3'"
+              >
+                <h2>Community-Building Student Groups</h2>
+                <div>
+                  <p>
+                    These groups help connect you to people with shared
+                    experiences across the department, college, and university.
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/community-building-student-groups/"
+                      data-type="page"
+                      data-id="3085"
+                      >Learn more &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eecs-card-row fadein fadein--up viewport-display visible">
+            <div class="eecs-card-row-card eecs-card-row-2">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/11/diwali-655x367.jpg"
+                alt="Students at Diwali celebration with henna"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-9A3324 eecs-card-row-col-1'"
+              >
+                <h2>Cultural &amp; Diversity Events</h2>
+                <div>
+                  <p>
+                    We are proud to celebrate events and holidays from around
+                    the world!
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/cultural-events/"
+                      data-type="page"
+                      data-id="2474"
+                      >Learn about the events we host every year &gt;</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/events/cultural-diversity-events/"
+                      >See ECE DEI Event Listings &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="eecs-card-row-card eecs-card-row-2">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/09/outreach-655x367.jpg"
+                alt="Student helps kid with engineering project"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-00B2A9 eecs-card-row-col-2'"
+              >
+                <h2>Diversity &amp; Outreach Stories</h2>
+                <div>
+                  <p>
+                    Curious how ECE applies to outreach and diversity? Check out
+                    these stories on the impact of our research, events, and
+                    programs.
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/diversity-and-outreach/"
+                      >Learn more &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eecs-card-row fadein fadein--up viewport-display visible">
+            <div class="eecs-card-row-card eecs-card-row-2">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2019/07/NCID.jpg"
+                alt="Flag hallway in Pierpont Commons"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-00B2A9 eecs-card-row-col-1'"
+              >
+                <h2>DEI Resources</h2>
+                <div>
+                  <p>
+                    There are many resources and centers on campus dedicated to
+                    ensuring a welcoming environment for all. Here’s a list of
+                    places where you can find additional support!
+                  </p>
+                  <p>
+                    <a href="https://umdearborn.edu/cecs/culture/dei-resources/"
+                      >Learn more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="eecs-card-row-card eecs-card-row-2">
+              <img
+                decoding="async"
+                src="https://umdearborn.edu/cecs/wp-content/uploads/sites/4/2022/07/HonorsGo-655x367-1.jpg"
+                alt="student with turtle hatching on beach"
+              />
+              <div
+                class="eecs-card-row-content eecs-card-bar-00B2A9 eecs-card-row-col-2'"
+              >
+                <h2>DEI Funding Support</h2>
+                <div>
+                  <p>
+                    We provide financial support for student groups and projects
+                    focused on supporting diversity, equity, and inclusion
+                    efforts.
+                  </p>
+                  <p>
+                    <a
+                      href="https://umdearborn.edu/cecs/culture/student-support/"
+                      >Learn more &gt;</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wp-block-cbd-eecs-block-card-contents-type2 cct2">
+            <div class="cct2_card_wrapper">
+              <div class="cct2_card">
+                <img class="cct2_card_image cct2_card1image" />
+                <div class="cc_card_content um-blue">
+                  <div class="cct2_card1body">
+                    <h2 class="wp-block-heading">Land Acknowledgement</h2>
+
+                    <p>
+                      The University of Michigan, named for Michigami, the
+                      world’s largest freshwater system located in the Huron
+                      River watershed, was formed and has grown through
+                      connections with the land stewarded by Niswi Ishkodewan
+                      Anishinaabeg: The Three Fires People, who are the Ojibwe,
+                      Odawa, and Potawatomi, along with their neighbors the
+                      Seneca, Delaware, Shawnee and Wyandot nations.
+                      <a
+                        rel="noreferrer noopener"
+                        href="http://markmaynard.com/2014/04/the-often-overlooked-native-american-history-of-ypsilanti/"
+                        target="_blank"
+                        >Learn more &gt;</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Rest of your webpage content goes here -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="inner">
+          <div class="footer-left">
+            <a
+              href="https://umdearborn.edu/cec
+              aria-label="Visit the University of Michigan Website"
+              ><img
+                class="footer-logo"
+                src="static/images/cecs.png"
+                alt="University of Michigan"
+            /></a>
+            <nav class="footer-nav">
+              <ul class="footer-menu">
+                <li class="footer-menu-item">
+                  <a
+                    class="footer-menu-link"
+                    href="https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering"
+
+                    >Industrial and Manufacturing Systems Engineering</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    class="footer-menu-link"
+                    href="https://umdearborn.edu/cecs/departments/electrical-and-computer-engineering"
+                    >Electrical Engineering and Computer Science Department</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-right footer-type-reg">
+            <div class="footer-right-column">
+              <img src="static/images/astmlogo.png" />
+              <h3 class="footer-right-heading">
+                <a href="https://www.astm.org/">ASTM International</a>
+              </h3>
+
+             
+              <div class="footer-right-socials">
+                <a
+                  class="footer-right-social"
+                  href="https://twitter.com/UMDearbornCECS"
+                  aria-label="Find us on twitter"
+                  ><img
+                    src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/twitter.svg"
+                    alt="twitter" /></a
+                ><a
+                  class="footer-right-social"
+                  href="https://www.linkedin.com/in/department-of-electrical-and-computer-engineering-university-of-michigan-dearborn-7a698b261/"
+                  aria-label="Find us on linkedin"
+                  ><img
+                    src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/linkedin.svg"
+                    alt="linkedin" /></a
+                ><a
+                  class="footer-right-social"
+                  href="#"
+                  aria-label="Find us on youtube"
+                  ><img
+                    src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/youtube.svg"
+                    alt="youtube" /></a
+                ><a
+                  class="footer-right-social"
+                  href="#"
+                  aria-label="Find us on instagram"
+                  ><img
+                    src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/instagram.svg"
+                    alt="instagram" /></a
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="copyright">
+          <span class="copyright-text"
+            >© 2023
+            <a
+              href="https://regents.umich.edu
+              class="copyright-menu-link"
+              >The Regents of the University of Michigan</a
+            ></span
+          >
+          <nav class="copyright-nav">
+            <ul class="copyright-menu">
+              <li class="copyright-menu-item">
+                <a
+                  class="copyright-menu-link"
+                  href="https://www.engin.umich.edu/college/about/privacy"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="copyright-menu-item">
+                <a
+                  class="copyright-menu-link"
+                  href="https://safety.engin.umich.edu/"
+                  >Campus Safety</a
+                >
+              </li>
+              <li class="copyright-menu-item">
+                <a
+                  class="copyright-menu-link"
+                  href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice"
+                  >Non-Discrimination Policy</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div> -->
+      </div>
+    </footer>
+  </body>
+</html>

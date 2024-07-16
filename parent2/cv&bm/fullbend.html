@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    <link rel="icon" href="/static/icon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/styless1.css" />
+    <title>Skeleton</title>
+  </head>
+  <body>
+    <header class="header site-4 division-site-type narrow_logo">
+        <div class="hamburger-logo-wrapper">
+          <div class="logo-wrapper site-4">
+            <a
+              href="https://umdearborn.edu/cecs"
+              aria-label="Visit the ECE website home page"
+              ><img
+                src="/static/images/LOres.png"
+                alt="Electrical and Computer Engineering"
+            /></a>
+          </div>
+          <div
+            id="hamburger"
+            class="hamburger"
+            type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+            aria-role="button"
+          >
+            <span id="hamburger-icon"
+              ><img
+                src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/menu.svg"
+                alt="menu"
+              />
+              MENU
+            </span>
+            <a
+              href="#"
+              class="search"
+              id="search-button-mobile"
+              aria-label="Open a search form"
+            >
+              <span
+                class="search-text"
+                id="search-button-mobile-text"
+                aria-role="button"
+                aria-label="Open a search form"
+                >Search</span
+              >
+              <img
+                src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/search.svg"
+                alt="Search"
+                id="eecs-search-svg-mobile"
+              />
+              <img
+                src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/noun_Close_330124.svg"
+                alt="Close"
+                id="eecs-close-svg-mobile"
+                class="now-you-dont"
+              />
+            </a>
+            <script
+              async=""
+              src="https://cse.google.com/cse.js?cx=015640634156563992032:rlhplrfpn2u"
+            ></script>
+            <div id="google-top-search-mobile">
+              <div
+                class="gsc-control-searchbox-only gsc-control-searchbox-only-en"
+                dir="ltr"
+              >
+                <form
+                  class="gsc-search-box gsc-search-box-tools"
+                  accept-charset="utf-8"
+                >
+                  <table
+                    cellspacing="0"
+                    cellpadding="0"
+                    role="presentation"
+                    class="gsc-search-box"
+                  >
+                    <tbody>
+                      <tr>
+                        <td class="gsc-input">
+                          <div class="gsc-input-box" id="gsc-iw-id1">
+                            <table
+                              cellspacing="0"
+                              cellpadding="0"
+                              role="presentation"
+                              id="gs_id50"
+                              class="gstl_50 gsc-input"
+                              style="width: 100%; padding: 0px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td id="gs_tti50" class="gsib_a">
+                                    <input
+                                      autocomplete="off"
+                                      type="text"
+                                      size="10"
+                                      class="gsc-input"
+                                      name="search"
+                                      title="search"
+                                      aria-label="search"
+                                      id="gsc-i-id1"
+                                      dir="ltr"
+                                      spellcheck="false"
+                                      placeholder="Search"
+                                      style="
+                                        width: 100%;
+                                        padding: 0px;
+                                        border: none;
+                                        margin: 0px;
+                                        height: auto;
+                                        background: url('https://www.google.com/cse/static/images/1x/en/branding.png')
+                                          left center no-repeat rgb(255, 255, 255);
+                                        outline: none;
+                                      "
+                                    />
+                                  </td>
+                                  <td class="gsib_b">
+                                    <div class="gsst_b" id="gs_st50" dir="ltr">
+                                      <a
+                                        class="gsst_a"
+                                        href="javascript:void(0)"
+                                        title="Clear search box"
+                                        role="button"
+                                        style="display: none"
+                                        ><span
+                                          class="gscb_a"
+                                          id="gs_cb50"
+                                          aria-hidden="true"
+                                          >×</span
+                                        ></a
+                                      >
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="gsc-search-button">
+                          <button class="gsc-search-button gsc-search-button-v2">
+                            <svg width="13" height="13" viewBox="0 0 13 13">
+                              <title>search</title>
+                              <path
+                                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </td>
+                        <td class="gsc-clear-button">
+                          <div class="gsc-clear-button" title="clear results">
+                            &nbsp;
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="nav-wrapper">
+          <nav class="utility-nav">
+            <ul class="utility-menu site-4">
+              <li class="utility-menu-item">
+                <a
+                  class="utility-menu-link"
+                  href="https://github.com/jomidokunMain/pose_mech"
+                  aria-label="Visit the EECS website"
+                  >Paper</a
+                >
+                <a
+                  class="utility-menu-link-mobile"
+                  href="https://github.com/jomidokunMain/pose_mech"
+                  aria-label="Visit the EECS website"
+                  >Paper</a
+                >
+              </li>
+              <li class="utility-menu-item">
+                <a
+                  class="utility-menu-link"
+                  href="https://github.com/jomidokunMain/pose_mech"
+                  aria-label="Visit the ECE website"
+                  >FIND GITHUB</a
+                >
+                <a
+                  class="utility-menu-link-mobile"
+                  href="https://github.com/jomidokunMain/pose_mech"
+                  aria-label="Visit the ECE website"
+                  >FIND GITHUB</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="search"
+              id="search-button"
+              aria-label="Open a search form"
+            >
+              <span
+                class="search-text"
+                id="search-button-text"
+                aria-role="button"
+                aria-label="Open a search form"
+                >Search</span
+              >
+              <img
+                src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/search.svg"
+                alt="Search"
+                id="eecs-search-svg"
+              />
+              <img
+                src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/noun_Close_330124.svg"
+                alt="Close"
+                id="eecs-close-svg"
+                class="now-you-dont"
+              />
+            </a>
+  
+            <script
+              async=""
+              src="https://cse.google.com/cse.js?cx=015640634156563992032:rlhplrfpn2u"
+            ></script>
+            <div id="google-top-search">
+              <div
+                class="gsc-control-searchbox-only gsc-control-searchbox-only-en"
+                dir="ltr"
+              >
+                <form
+                  class="gsc-search-box gsc-search-box-tools"
+                  accept-charset="utf-8"
+                >
+                  <table
+                    cellspacing="0"
+                    cellpadding="0"
+                    role="presentation"
+                    class="gsc-search-box"
+                  >
+                    <tbody>
+                      <tr>
+                        <td class="gsc-input">
+                          <div class="gsc-input-box" id="gsc-iw-id2">
+                            <table
+                              cellspacing="0"
+                              cellpadding="0"
+                              role="presentation"
+                              id="gs_id51"
+                              class="gstl_51 gsc-input"
+                              style="width: 100%; padding: 0px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td id="gs_tti51" class="gsib_a">
+                                    <input
+                                      autocomplete="off"
+                                      type="text"
+                                      size="10"
+                                      class="gsc-input"
+                                      name="search"
+                                      title="search"
+                                      aria-label="search"
+                                      id="gsc-i-id2"
+                                      dir="ltr"
+                                      spellcheck="false"
+                                      style="
+                                        width: 100%;
+                                        padding: 0px;
+                                        border: none;
+                                        margin: 0px;
+                                        height: auto;
+                                        background: url('https://www.google.com/cse/static/images/1x/en/branding.png')
+                                          left center no-repeat rgb(255, 255, 255);
+                                        outline: none;
+                                      "
+                                    />
+                                  </td>
+                                  <td class="gsib_b">
+                                    <div class="gsst_b" id="gs_st51" dir="ltr">
+                                      <a
+                                        class="gsst_a"
+                                        href="javascript:void(0)"
+                                        title="Clear search box"
+                                        role="button"
+                                        style="display: none"
+                                        ><span
+                                          class="gscb_a"
+                                          id="gs_cb51"
+                                          aria-hidden="true"
+                                          >×</span
+                                        ></a
+                                      >
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="gsc-search-button">
+                          <button class="gsc-search-button gsc-search-button-v2">
+                            <svg width="13" height="13" viewBox="0 0 13 13">
+                              <title>search</title>
+                              <path
+                                d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </td>
+                        <td class="gsc-clear-button">
+                          <div class="gsc-clear-button" title="clear results">
+                            &nbsp;
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <nav class="main-menu-nav">
+            <ul id="main-menu" class="main-menu">
+              <li
+                id="menu-item-53"
+                class="has-children menu-item-53 obj-39 objp-0 main-menu-item"
+              >
+                <a href="../../home.html"  class="main-menu-link" class="active">Home</a
+                ><button class="arrow-button"></button>
+              </li>
+              <li
+                id="menu-item-52"
+                class="has-children menu-item-52 obj-43 objp-0 main-menu-item"
+              >
+                <a href="../../team.html"  class="main-menu-link">Research Team</a
+                ><button class="arrow-button"></button>
+              </li>
+              <li
+                id="menu-item-3811"
+                class="has-children menu-item-3811 obj-380 objp-0 main-menu-item"
+              >
+                <a href="#demo" class="main-menu-link">Project Demo</a
+                ><button class="arrow-button"></button>
+                <ul class="main-menu-child">
+                  <li
+                    id="menu-item-465"
+                    class="menu-item-465 obj-455 objp-380 main-menu-item"
+                  >
+                    <a href="../leaning.html" class="main-menu-link"
+                      >50<sup>th </sup>percentile</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-508"
+                    class="menu-item-508 obj-494 objp-380 main-menu-item"
+                  >
+                    <a href="../../parent1/leaning.html" class="main-menu-link"
+                      >95<sup>th </sup>percentile</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu-item-49"
+                class="has-children menu-item-49 obj-46 objp-0 main-menu-item"
+              >
+                <a href=".././about.html"  class="main-menu-link">About</a
+                ><button class="arrow-button"></button>
+              </li>
+              <li>
+                <form class="mobile-search" role="search">
+                  <input
+                    class="mobile-search-field"
+                    type="search"
+                    id="mobile-search"
+                    placeholder="search"
+                    name="q"
+                  /><input class="mobile-search-submit" type="submit" value="" />
+                </form>
+              </li>
+              <li class="dept-menu main-menu-item eecs-dept-menu">
+                <a href="https://eecs.engin.umich.edu" class="main-menu-link abc"
+                  >Electrical Engineering &amp; Computer Science</a
+                >
+              </li>
+              <li class="dept-menu main-menu-item cse-dept-menu">
+                <a href="https://cse.engin.umich.edu" class="main-menu-link abc"
+                  >Computer Science &amp; Engineering</a
+                >
+              </li>
+              <li class="dept-menu main-menu-item ece-dept-menu">
+                <a href="https://umdearborn.edu/cecs" class="main-menu-link abc"
+                  >Electrical &amp; Computer Engineering</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <section class="scroll-section3">  
+      
+        <div id="left-section">
+        <div id="left-nav-bar">
+            <div id="has-dropdown">
+            <div class="navbar" onclick="toggleDropdown('myDropdown')">Computer Vision Method</div>
+            <div id="myDropdown" class="dropdown-content">
+                <li>
+                <a href="../leaning.html"   id="show-video">Leaning</a>
+                </li>
+                <li><a href="../fullbend.html"   id="show-video" >Full Bend</a></li>
+                <li><a href="../bend40.html"  id="show-video">Bend 40d</a></li>
+                <li><a href="../bend70.html"  id="show-video">Bend 70d</a></li>
+                <li><a href="../sq.html"  id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>   
+            <div class="navbar" onclick="toggleDropdown('myDropdown1')" >Biomechanical Method</div>
+            <div id="myDropdown1" class="dropdown-content">
+                <li>
+                    <a href="../bm/leaning.html"  id="show-video"
+                        >Leaning</a
+                    >
+                    </li>
+                    <li><a href="../bm/fullbend.html"  id="show-video" >Full Bend</a></li>
+                    <li><a href="../bm/bend40.html"  id="show-video">Bend 40d</a></li>
+                    <li><a href="../bm/bend70.html"  id="show-video">Bend 70d</a></li>
+                    <li><a href="../bm/sq.html" id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="navbar" class="active" onclick="toggleDropdown('myDropdown2')">Combined Method</div>
+            <div id="myDropdown2" class="dropdown-content">
+                <li>
+                <a href="leaning.html"   id="show-video">Leaning</a>
+                </li>
+                <li><a href="fullbend.html"   class="active" id="show-video">Full Bend</a></li>
+                <li><a href="bend40.html"   id="show-video">Bend 40d</a></li>
+                <li><a href="bend70.html"   id="show-video">Bend 70d</a></li>
+                <li><a href="sq.html"   id="show-video">Squatting</a></li>
+            </div>
+            </div>
+        </div>
+        <div id="main-content4">
+            <p>
+                <center> 
+                    <h2> Marker -Based Method </h2>
+                <div class="fixed-size">
+                    <div>  
+                        <div class="video">
+                            <video id="video1" controls autoplay loop>
+                                <source src="/static/videos/50th/CV&BM/Fullbending.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-controls">
+                                <div>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.1)">0.1x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.25)">0.25x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 0.5)">0.5x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 1.0)">1.0x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 2.5)">2.5x</button>
+                                    <button class="speed-button" onclick="changeSpeed('video1', 5)">5x</button>
+                                </div>
+                            </div>
+                            <div class="time-bar">
+                                <div id="current-time1" class="current-time">0:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </center>
+            </p>
+            <p>
+                <center> 
+                    <h2> Computer Vision Method </h2>
+                <div class="fixed-size">
+                    <div>  
+                        <div class="video">
+                            <video id="video2" controls autoplay loop>
+                                <source src="/static/videos/50th/CV&BM/Fullbending_EXO.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-controls">
+                            <div>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.1)">0.1x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.25)">0.25x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 0.5)">0.5x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 1.0)">1.0x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 2.5)">2.5x</button>
+                                <button class="speed-button" onclick="changeSpeed('video2', 5)">5x</button>
+                            </div>
+                        </div>
+                        <div class="time-bar">
+                            <div id="current-time2" class="current-time">0:00</div>
+                        </div>
+                    </div>
+                </div> 
+            </center>
+            </p>
+        </div>
+    </section> 
+    <footer class="footer">
+        <div class="container">
+          <div class="inner">
+            <div class="footer-left">
+              <a
+                href="https://umdearborn.edu/cecs"
+                target="_blank"
+                aria-label="Visit the University of Michigan Website"
+                ><img
+                  class="footer-logo"
+                  src="/static/images/cecs.png"
+                  alt="University of Michigan"
+              /></a>
+              <nav class="footer-nav">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item">
+                    <a
+                      class="footer-menu-link"
+                      href="https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering"
+                      target="_blank"
+                      >Industrial and Manufacturing Systems Engineering</a
+                    >
+                  </li>
+                  <li class="footer-menu-item">
+                    <a
+                      class="footer-menu-link"
+                      href="https://umdearborn.edu/cecs/departments/electrical-and-computer-engineering"
+                      >Electrical Engineering and Computer Science Department</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-right footer-type-reg">
+              <div class="footer-right-column">
+                <img src="/static/images/astmlogo.png" />
+                <h3 class="footer-right-heading">
+                  <a href="https://www.astm.org/">ASTM International</a>
+                </h3>
+  
+               
+                <div class="footer-right-socials">
+                  <a
+                    class="footer-right-social"
+                    href="https://twitter.com/UMDearbornCECS"
+                    target="_blank"
+                    aria-label="Find us on twitter"
+                    ><img
+                      src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/twitter.svg"
+                      alt="twitter" /></a
+                  ><a
+                    class="footer-right-social"
+                    href="https://www.linkedin.com/in/department-of-electrical-and-computer-engineering-university-of-michigan-dearborn-7a698b261/"
+                    target="_blank"
+                    aria-label="Find us on linkedin"
+                    ><img
+                      src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/linkedin.svg"
+                      alt="linkedin" /></a
+                  ><a
+                    class="footer-right-social"
+                    href="#"
+                    target="_blank"
+                    aria-label="Find us on youtube"
+                    ><img
+                      src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/youtube.svg"
+                      alt="youtube" /></a
+                  ><a
+                    class="footer-right-social"
+                    href="#"
+                    target="_blank"
+                    aria-label="Find us on instagram"
+                    ><img
+                      src="https://umdearborn.edu/cecs/wp-content/themes/i-love-eecs/images/instagram.svg"
+                      alt="instagram" /></a
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="copyright">
+            <span class="copyright-text"
+              >© 2023
+              <a
+                href="https://regents.umich.edu/"
+                target="_blank"
+                class="copyright-menu-link"
+                >The Regents of the University of Michigan</a
+              ></span
+            >
+            <nav class="copyright-nav">
+              <ul class="copyright-menu">
+                <li class="copyright-menu-item">
+                  <a
+                    class="copyright-menu-link"
+                    href="https://www.engin.umich.edu/college/about/privacy"
+                    target="_blank"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="copyright-menu-item">
+                  <a
+                    class="copyright-menu-link"
+                    href="https://safety.engin.umich.edu/"
+                    target="_blank"
+                    >Campus Safety</a
+                  >
+                </li>
+                <li class="copyright-menu-item">
+                  <a
+                    class="copyright-menu-link"
+                    href="https://hr.umich.edu/working-u-m/workplace-improvement/office-institutional-equity/nondiscrimination-policy-notice"
+                    target="_blank"
+                    >Non-Discrimination Policy</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div> -->
+        </div>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+  </body>
+</html>

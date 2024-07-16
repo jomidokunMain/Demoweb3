@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:#00274C;
+}
+
+#top-section {
+    background-color: #FFCB05;
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+    
+}
+
+#top-nav2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#top-nav2 a {
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+}
+
+#top-nav {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    
+    
+}
+#top-nav a {
+    font-size: 12px;
+    font-family: 'Anton', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+}
+#top-nav a.active {
+    background-color: #784115;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+#logo {
+    padding-left: 0%;
+    
+}
+#logo img {
+    padding-left: 85%;
+    width: 65%;
+
+}
+
+#banner-text p {
+    font-size: 13px;
+    font-family: 'open sans';
+    font-weight: bold;
+    margin-top: -20%;
+
+}
+
+#title {
+    font-size: 20px;
+    color: #050404;
+    padding-right: 50%;
+    padding-left: 3%;
+    margin-top: -0.9%;
+}
+
+#left-section {
+    display: flex;
+    flex: 1;
+    background-color: #FFCB05;
+}
+
+#left-nav-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+#left-nav-bar a {
+    text-decoration: none;
+    color: #0a080e;
+    margin: 10px 50px;
+}
+#left-section #has-dropdown:hover #sub-nav {
+    display: block;
+}
+
+#show-video {
+    text-decoration: underline;
+    cursor: pointer;
+} 
+.dropdown-content {
+    display: block;
+    background-color: #FFCB05;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    padding-left: 0px;
+   
+}
+.top-nav a:hover {
+    background-color: #555;
+    
+}
+.navbar {
+    background-color: #FFCB05;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: larger;
+}
+
+/* Style for list items in the dropdown menu */
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+/* Change the background color of list items on hover */
+.dropdown-content a{
+    display: block;
+}
+
+#myDropdown a.active {
+    background-color: #f44336;
+}
+
+#myDropdown1 a.active {
+    background-color: #2b14c1;
+}
+#myDropdown2 a.active {
+    background-color: #14c125;
+}
+
+
+
+/* Style for the playback speed buttons */
+.speed-button {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.speed-button button:first-child {
+    margin-left: 20px; /* Adjust the desired padding value */
+}
+ /* Style for the time display bar */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.speed-buttons {
+    display: flex;
+    padding-left: 20px;
+}
+
+.time-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 5px;
+}
+.time-bar2 {
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 5px;
+}
+
+#main-content {
+    flex: 8;
+    background-image: url('/static/webimage/michgan-big.jpg');
+}
+#main-content4 {
+    flex: 8;
+    background-image: url('/static/webimage/michgan-big.jpg');
+}
+
+#video1 {
+    width: 1080px;
+    height: 480px;
+}
+#video2 {
+    width: 1080px;
+    height: 480px;
+}
+
+/* For screens with a width of 768px or more */
+@media screen and (max-width: 1200px) {
+    #title {
+        font-size: 14px;
+        color: #020202;
+        padding-right: 50%;
+        margin-top: -0.5%;
+    }
+    #top-nav {
+        top: 5px;
+       
+    }
+    #top-nav a {
+        font-size: 8px;
+        font-family: 'Anton', sans-serif;
+    }
+    #top-nav2 a {
+        font-size: 10px;
+        font-family: 'Anton', sans-serif;
+    }
+    #video1 {
+        width: 50%;
+        height: 50%;
+    }
+    #video2 {
+        width: 50%;
+        height: 50%;
+    }
+    #left-nav-bar a {
+
+        margin: 0px 50px;
+    }
+    .navbar {
+        font-size: medium;
+        padding: 2px;
+    }
+    #left-nav-bar a {
+        font-size: small;
+    }
+    .speed-button {
+        padding: 1px 1px;
+        
+    }
+    .dropdown-content li {
+        margin-bottom: 1px;
+    }
+    
+   
+}

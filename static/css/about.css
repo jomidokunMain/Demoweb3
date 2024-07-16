@@ -1,0 +1,400 @@
+
+.scroll-section4{
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    --rem: 16;
+    --breakpoint-min: 960px;
+    --content-width: 910px;
+    --col-width: 57.5px;
+    --gutter-width: 20px;
+    --body-font-size: 17px;
+    --h1FontFamily: "Haas Grot Disp 55 Roman",Helvetica,Arial,sans-serif;
+    --h2FontFamily: "Haas Grot Disp 75",Helvetica,Arial,sans-serif;
+    --h3FontFamily: "Haas Grot Disp 55 Roman",Helvetica,Arial,sans-serif;
+    --h4FontFamily: "HaasGrotText-75Bold",Helvetica,Arial,sans-serif;
+    --semiBoldFontFamily: "Haas Grot Disp 65",Helvetica,Arial,sans-serif;
+    --bodyFontFamily: "HaasGrotText-55Roman",Helvetica,Arial,sans-serif;
+    --neue-haas-55: "HaasGrotText-55Roman",Helvetica,Arial,sans-serif;
+    --neue-haas-65: "HaasGrotText-65Medium",Helvetica,Arial,sans-serif;
+    --neue-haas-75: "HaasGrotText-75Bold",Helvetica,Arial,sans-serif;
+    --neue-haas-display-55: "Haas Grot Disp 55 Roman",Helvetica,Arial,sans-serif;
+    --neue-haas-display-65: "Haas Grot Disp 65",Helvetica,Arial,sans-serif;
+    --neue-haas-display-75: "Haas Grot Disp 75",Helvetica,Arial,sans-serif;
+    --h1FontSize: 48px;
+    --h2FontSize: 36px;
+    --h3FontSize: 28px;
+    --h4FontSize: 17px;
+    --bodyFontSize: 17px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 0;
+    padding-top: 80px;
+    background-image: radial-gradient(circle,#3c3c3c,#000 50%);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+}
+.intro{
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+
+}
+
+.text1{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+    width: 555px;
+
+
+}
+.container1 {
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 15%;
+    margin: 0 20;
+    
+
+}
+
+
+.container1 img{
+    width: 870px;
+    height: 759px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    float: right;
+}
+   
+.callout1{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #00a6ff;
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid #00a6ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 495px;
+
+}
+.container2{
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+}
+.text2{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 570px;
+    margin-left: 150px;
+}
+.heading2 a {
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 36px;
+    text-decoration: dashed;
+}
+
+.text2 p{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsla(0,0%,100%,.6);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.reference1 { 
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    color: #00a6ff;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+
+.container3 {
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+    padding-top: 40px;
+}
+
+.text3 {
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: -48%;
+    padding: 0;
+    float: right;
+    width: 345px;
+}
+.text3 p{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsla(0,0%,100%,.6);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.heading4 a {
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+.container4 {
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+    padding-top: 40px;
+}
+.text4 {
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    width: 420px;
+    margin-left: 225px;
+    
+}
+.text4 h1{
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.text4 a{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    height: 46px;
+    border: 1px solid #00a6ff;
+    border-radius: 8px;
+    color: #00a6ff;
+    line-height: 2.7;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    width: 288px;
+    margin-top: 0;
+}
+
+#outdoor-maximize{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    margin-top: 120px;
+    padding: 80px 0;
+    background-color: #fff;
+    height: 580px;
+
+}
+
+.container5{
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+}
+#outdoor-capture{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 420px;
+}
+.text5{
+
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.text5 h1{
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.text5 p{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.6);
+
+}
+#maximize-areas{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 0;
+    width: 420px;
+    height: 580px;
+}
+
+
+.container6{
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 870px;
+}
+.videosbb{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    max-height: 100%;
+    max-width: none;
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+
+}
+
+
+.video-badge{
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.text6 {
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 570px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.text6 h1 a{
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: dashed;
+    
+}
+.text6 p{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsla(0,0%,100%,.6);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.posvid{
+    height: 500px;
+
+    
+}
+.imgsec {
+    width: 870px;
+    height: 759px;
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: -55%;
+    border: 0;
+    max-width: 50%;
+    height: 60%;
+    float: right;
+}
+
+.heading5 a{
+    color: #060606;
+    box-sizing: border-box;
+    padding: 0;
+    margin: .67em 0;
+    font-family: Univers LT W01\ 45 Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: double;
+}

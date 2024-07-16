@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <link rel="icon" href="static/icon.ico" type="image/x-icon" />
+    <title>Skeleton</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="top-section">
+        <div id="top-nav">
+          <a href="parent2/leaning.html">50<sup>th</sup>percentile</a>
+          <a href="parent1/leaning.html" class="active"
+            >95<sup>th</sup>percentile</a
+          >
+        </div>
+        <div id="top-nav2">
+          <a href="home.html">Home</a>
+          <a href="team.html">Research Team</a>
+        </div>
+        <div id="logo">
+          <img class="logo" src="static/images/logo22.png" alt="Your Logo">
+        </div>
+        <h1 id="title">Demo</h1>
+      </div>
+        <div id="left-section">
+        <div id="left-nav-bar">
+            <div id="has-dropdown">
+            <div class="navbar" onclick="toggleDropdown('myDropdown')">Computer Vision Method</div>
+            <div id="myDropdown" class="dropdown-content">
+                <li>
+                <a href="parent2/leaning.html" id="show-video"
+                    >Leaning</a
+                >
+                </li>
+                <li><a href="/parent2/fullbend" id="show-video" >Full Bend</a></li>
+                <li><a href="/parent2/bend40" id="show-video">Bend 40d</a></li>
+                <li><a href="/parent2/bend70" id="show-video">Bend 70d</a></li>
+                <li><a href="/parent2/sq" id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>   
+            <div class="navbar" onclick="toggleDropdown('myDropdown1')" >Biomechanical Method</div>
+            <div id="myDropdown1" class="dropdown-content">
+                <li>
+                    <a href="parent2/leaning.html" id="show-video"
+                        >Leaning</a
+                    >
+                    </li>
+                    <li><a href="/parent2/bm/fullbend" id="show-video" >Full Bend</a></li>
+                    <li><a href="/parent2/bm/bend40" id="show-video">Bend 40d</a></li>
+                    <li><a href="/parent2/bm/bend70" id="show-video">Bend 70d</a></li>
+                    <li><a href="/parent2/bm/sq" id="show-video">Squatting</a></li>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="navbar" onclick="toggleDropdown('myDropdown2')">Combined Method</div>
+            <div id="myDropdown2" class="dropdown-content">
+                <li>
+                <a href="/parent2/cv&bm/leaning" id="show-video">Leaning</a>
+                </li>
+                <li><a href="/parent2/cv&bm/fullbend" id="show-video">Full Bend</a></li>
+                <li><a href="/parent2/cv&bm/bend40" id="show-video">Bend 40d</a></li>
+                <li><a href="/parent2/cv&bm/bend70" id="show-video">Bend 70d</a></li>
+                <li><a href="/parent2/cv&bm/sq" id="show-video">Squatting</a></li>
+            </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <p>
+                This is the content area for 50<sup>th</sup>percentile. Click on the left navigation bars to view
+            content.
+            </p>
+        </div>
+        </div>
+        <div id="bottom-section">
+        <div id="bottom-nav">
+
+        </div>
+        </div>
+    </div>
+        <script src="static/js/scripts.js"></script>
+
+  </body>
+</html>
