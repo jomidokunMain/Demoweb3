@@ -190,11 +190,11 @@ body {
 
 #main-content {
     flex: 8;
-    background-image: url('/static/webimage/michgan-big.jpg');
+    background-image: url('../webimage/michgan-big.jpg');
 }
 #main-content4 {
     flex: 8;
-    background-image: url('/static/webimage/michgan-big.jpg');
+    background-image: url('../webimage/michgan-big.jpg');
 }
 
 #video1 {
