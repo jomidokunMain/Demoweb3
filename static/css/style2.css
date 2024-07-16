@@ -162,7 +162,7 @@ nav li {
 }
 .scroll-section {
     /* Add your background image here */
-    background-image: url('/static/webimage/background_main.jpg');
+    background-image: url('../webimage/background_main.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #333;
@@ -171,7 +171,7 @@ nav li {
 }
 .scroll-section2 {
     /* Add your background image here */
-    background-image: url('/static/webimage/michgan-big.jpg');
+    background-image: url('../webimage/michgan-big.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #333;
