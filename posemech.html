@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Demo</title>
     <link
@@ -10,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="static/css/styless1.css" />
+    <link rel="stylesheet" href="static/css/posemech.css" />
     <link rel="stylesheet" type="text/css" href="static/css/about.css" />
     <title>Skeleton</title>
   </head>
@@ -341,7 +344,7 @@
               id="menu-item-53"
               class="has-children menu-item-53 obj-39 objp-0 main-menu-item"
             >
-              <a href="home.html" class="main-menu-link ">Home</a
+              <a href="home.html" class="main-menu-link" >Home</a
               ><button class="arrow-button"></button>
             </li>
             <li
@@ -377,19 +380,20 @@
               </ul>
             </li>
             <li
-              id="menu-item-491"
-              class="has-children menu-item-491 obj-46 objp-0 main-menu-item"
-            >
-              <a href="about.html" class="main-menu-link">About</a
-              ><button class="arrow-button"></button>
-            </li>
-            </li>
-            <li
               id="menu-item-49"
               class="has-children menu-item-49 obj-46 objp-0 main-menu-item"
             >
-              <a href="posemech.html" class="main-menu-link">PoseMech</a
-              ><button class="arrow-button"></button>
+              <!-- <a href="posemech.html" class="main-menu-link">PoseMech</a> -->
+              <button class="arrow-button"></button><a href="about.html" class="main-menu-link">About</a>
+              <button class="arrow-button"></button>
+            </li>
+            <li
+              id="menu-item-521"
+              class="has-children menu-item-521 obj-47 objp-0 main-menu-item"
+            >
+              <a href="posemech.html" class="main-menu-link active">PoseMech</a>
+              <!-- <button class="arrow-button"></button><a href="about.html" class="main-menu-link">About</a> -->
+              <button class="arrow-button"></button>
             </li>
             <li>
               <form class="mobile-search" role="search">
@@ -424,18 +428,26 @@
     <section class="scroll-section4">  
         <section id="intro">
             <div class="container1">
-              <img alt="Sprinter with motion capture markers and metrics overlaid" src="static/images/overview.gif">
+              <!-- <img src="static/images/image4.png" alt="Outdoor mocap in the mountains."> -->
+              <!-- <img src="static/images/image11.png" alt="Gait Lab"> -->
+              <img alt="Sprinter with motion capture markers and metrics overlaid" src="static/images/image11.png">
+              <!-- <img alt="Sprinter with motion capture markers and metrics overlaid" src="static/images/overview.gif"> -->
               <div class="text1">
-                <h1 class="heading1">About</h1>
-                <p>Our research is investigating the use and application of exoskeleton devices as an alternative workplace intervention approach to assist workers with injury and recovering workers return to work timely and safely. We employed digital human modeling and advanced biomechanics tools to characterize and quantify the support provided by the passive support trunk exoskeleton used by injured and recovering workers in the workplace ensuring improved recovery, low risk of musculoskeletal disorders, and early return to work by injured workers for various tasks. Advance biomechanics tools such as digital force plates, EMGs, and analog devices provides the necessary analystical tools the study.</p>
-                <p> Our pioneering project harnesses the potential of AI-empowered Digital Human Models, integrating cutting-edge technologies like computer vision, to revolutionize exoskeleton design for workers returning to their jobs after injuries. By creating precise and dynamic digital representations of individuals, our approach allows for tailored exoskeleton customization, ensuring ergonomic support and improved biomechanics. We're shaping the future of rehabilitation, with AI-driven DHMs at the forefront, enabling safer and more effective return-to-work strategies for individuals with previous injuries.</p>
+                <h1 class="heading1">PoseMech</h1>
+                <p>PoseMech is structured as a multi-stage computer vision and biomechanical inference pipeline. The system begins with a deep learning–based 2D convolutional neural network (CNN) pose estimator that extracts body keypoints from monocular RGB video. These 2D landmarks are temporally stabilized and passed to a 3D reconstruction module, where depth-aware kinematic structure is inferred using geometric constraints and learned pose priors to generate a coherent 3D skeletal representation.
+
+                The reconstructed pose is then mapped into a biomechanical computation layer consisting of 57 anatomically structured landmarks. These landmarks define segment coordinate systems for the trunk, pelvis, upper and lower extremities, enabling calculation of joint angles, segment orientations, and task-specific kinematic metrics. Using this articulated landmark model, PoseMech estimates joint flexion/extension angles and derives workload-relevant biomechanical indicators through kinematic transformation and inverse-dynamics–inspired approximations.
+
+                By integrating 2D CNN perception, 3D pose reconstruction, and a structured 57-landmark biomechanical model, PoseMech converts raw visual motion into quantitative ergonomic assessments. This layered architecture enables contactless estimation of biomechanical workload while maintaining anatomical interpretability and computational scalability for real-world deployment.</p>
               </div>
             </div>
           </section>
           <section id="accuracy">
             <img src="//deva90sapmc8w.cloudfront.net/precision-graph@2x.png" alt="Precision Graph">
             <div class="container2">
-              <div class="text2">
+              <img src="static/images/image4.png" alt="Outdoor mocap in the mountains.">
+
+              <!-- <div class="text2">
                 <div class="heading2"><a href="#accuracy">The most accurate measurement system in the world.</a></div>
                 <p>OptiTrack systems typically produce less than 0.2 mm of measurement error, even across large tracking
                   areas—even of those 10,000 sq ft or more. In smaller measurement areas, OptiTrack systems regularly produce
@@ -449,30 +461,10 @@
                   <p class="reference1"><span class="icon-book"></span> Journal of Biomechanics, Volume 58, 237-240. Alexander M.
                     Aurand, Jonathan S. Dufour, William S. Marras.</p>
                 </a>
-              </div>
+              </div> -->
             </div>
           </section>
-          <!-- <section id="gait">
-            <div class="container3">
-              <div class="image-group cycle lightbox-gallery-one" style="position: relative; width: 495px; height: 388.078px;">
-                <a class="image-link" rel="hospital" href="//deva90sapmc8w.cloudfront.net/gait-hospital-2-full.jpg" style="background-color: rgb(0, 0, 0); position: absolute; top: 0px; left: 0px; z-index: 2; opacity: 0; display: none; width: 495px; height: 388.078px;"><img src="//deva90sapmc8w.cloudfront.net/gait-hospital-2-medium.jpg" alt="Hospital Gait Lab"></a>
-                <a class="image-link" rel="hospital" href="//deva90sapmc8w.cloudfront.net/gait-hospital-4-full.jpg" style="background-color: rgb(0, 0, 0); position: absolute; top: 0px; left: 0px; display: block; z-index: 3; opacity: 1; width: 495px; height: 388.078px;"><img src="//deva90sapmc8w.cloudfront.net/gait-hospital-4-medium.jpg" alt="Hospital Gait Lab"></a>
-              </div>
-              <div class="text3">
-                <h1 class="heading4"><a href="#gait">Gait</a></h1>
-                <p>With clinically validated markersets for lower-body, full-body and multi-segment foot models directly
-                  available in Motive through its one-click subject calibration, Gait laboratories can easily integrate
-                  OptiTrack systems for seamless workflow without any compromises.</p>
-                <a class="callout1" href="http://www.ncbi.nlm.nih.gov/pubmed/17291764">
-                  <p><span class="title">Gait Validation Study.</span> Learn how the Rizzoli markerset offers superior
-                    biomechanical relevance when compared to conventional markersets like Helen Hayes and Plug-in-Gait.</p>
-                  <p class="reference1"><span class="icon-book"></span> Gait &amp; Posture. 2007 Oct;26(4):560-71. Epub 2007 Feb
-                    8. Leardini A1, Sawacha Z, Paolini G, Ingrosso S, Nativo R, Benedetti MG.</p>
-                </a>
-              </div>
-            </div>
-          </section> -->
-          <section id="exoskeleton">
+          <!-- <section id="exoskeleton">
             <div class="container4">
               <video autoplay="" loop="" muted="" playsinline="" preload="auto" class="slider-video" poster="//deva90sapmc8w.cloudfront.net/poster-eth-gait.jpg">
                 <source type="video/mp4" src="static/videos/webmix.mp4">
@@ -483,39 +475,197 @@
                   Video</a>
               </div>
             </div>
-          </section>
-          <section id="outdoor-maximize">
+          </section> -->
+          <!-- <section id="outdoor-maximize">
             <div class="container5">
               <div id="outdoor-capture">
-                <img src="static/webimage/subcom.png" alt="Outdoor mocap in the mountains.">
+                <img src="static/images/image4.png" alt="Outdoor mocap in the mountains.">
                 <div class="text5">
-                  <h1 class="heading5"><a href="#Moment L5/S1 Joint">Moment L5/S1 Joint</a></h1>
+                  <h1 class="heading5"><a href="#Moment L5/S1 Joint">Block Diagram</a></h1>
                   <p>The charts of the magnitude moments for various tasks performed with and without the exoskeleton device for the L5/S1 joints which suggest highest moment recorded for the bending task and the magnitude of the joint moment is reduced when the subject wears an exoskeleton device.</p>
-                  <!-- <a class="button lightbox-video" rel="golf" href="http://vimeo.com/102944455">Watch “Mocap in the
-                    Mountains”</a> -->
+
                 </div>
               </div>
               <div id="maximize-areas">
-                <img src="static/images/pkchart.png" alt="Gait Lab">
+                <img src="static/images/image11.png" alt="Gait Lab">
                 <div class="text5">
-                  <h1 class="heading5"><a href="#Compressive Load L5/S1 Joint">Compressive Load L5/S1 Joint</a></h1>
+                  <h1 class="heading5"><a href="#Compressive Load L5/S1 Joint">Calibration view</a></h1>
                   <p>The charts of the magnitude load for various tasks performed with and without the exoskeleton device for the L5/S1 joints which suggest highest compressive load on the L5/S1 joint is recorded during squatting and lifting 5.2Kg load and the least compressive load is recorded when the subject was standing still without any load. The magnitude of the loads on the L5/S1 joint when the exoskeleton is worn is smaller than without exoskeleton device usage.</p>
                 </div>
               </div>
-          </div></section>
-          <section id="sync-multiple-cameras">
+          </div>
+        </section> -->
+          <!-- <section id="sync-multiple-cameras">
             <div class="container6">
-              <img class="posvid"  src="static/images/exowear.gif">
+              <img class="posvid"  src="static/images/flowchart_posemech.png">
             </img>
-              <!-- <img class="imgsec" alt="Sprinter with motion capture markers and metrics overlaid" src="static/images/exoskeletondevices.png"> -->
+              <img class="imgsec" alt="Sprinter with motion capture markers and metrics overlaid" src="static/images/exoskeletondevices.png">
 
               <div class="video-badge"><span>Recorded in 1080p at 250 FPS</span></div>
               <div class="text6">
-                <h1 class="heading"><a href="#sync-multiple-cameras">Exoskeleton Device</a></h1>
-                <p>We employed digital human modeling and advanced biomechanics tools to characterize and quantify the support provided by the passive support trunk exoskeleton used by injured and recovering workers in the workplace ensuring improved recovery, low risk of musculoskeletal disorders, and early return to work by injured workers for various tasks.</p>
+                <h1 class="heading"><a href="#sync-multiple-cameras">Flowchart</a></h1>
+                <p></p>
+              </div>
+            </div>
+          </section> -->
+          <section id="posemech-demo" class="posemech-demo-section">
+            <div class="demo-wrap">
+              <div class="demo-header">
+                <h1>PoseMech — Interactive Real-Time Pipeline Demo</h1>
+                <p>
+                  Four-panel view of the PoseMech workflow: synchronized 2D capture, mesh
+                  overlay, real-time biomechanical signals, and an open scene
+                  visualization. Use the buttons to switch plot channels.
+                </p>
+
+                <div class="demo-links">
+                  <a
+                    class="demo-btn"
+                    href="https://github.com/jomidokunMain/pose_mech"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Code / Repo</a
+                  >
+                  <a class="demo-btn" href="#publications">Publications</a>
+                  <a class="demo-btn" href="#block-diagram">Block Diagram</a>
+                </div>
+              </div>
+
+              <!-- 2x2 GRID -->
+              <div class="demo-grid">
+                <!-- Top Left: 2D video -->
+                <div class="demo-panel">
+                  <div class="panel-title">2D Capture</div>
+                  <video
+                    id="vid2d"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="demo-video"
+                  >
+                    <!-- Replace with your actual 2D video -->
+                    <source src="static/videos/posemech_2d.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <!-- Top Right: 3D overlay video (or mesh overlay render) -->
+                <div class="demo-panel">
+                  <div class="panel-title">3D Mesh Overlay</div>
+                  <video
+                    id="vid3d"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="demo-video"
+                  >
+                    <!-- Replace with your actual overlay video -->
+                    <source
+                      src="static/videos/posemech_mesh_overlay.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <!-- Bottom Left: Interactive plots -->
+                <div class="demo-panel">
+                  <div class="panel-title plot-title-row">
+                    <span>Biomech Signal Plots</span>
+                    <div class="plot-controls">
+                      <button class="plot-btn active" data-plot="hip">Hip Flexion</button>
+                      <button class="plot-btn" data-plot="knee">Knee Flexion</button>
+                      <button class="plot-btn" data-plot="l5s1">L5/S1 Moment</button>
+                    </div>
+                  </div>
+                  <div id="plotArea" class="plot-area"></div>
+                </div>
+
+                <!-- Bottom Right: Open scene (iframe to your viewer / demo) -->
+                <div class="demo-panel">
+                  <div class="panel-title">Open Scene (Biomech Viewer)</div>
+
+                  <!-- Option A: iframe to an existing web-based viewer you host -->
+                  <iframe
+                    class="demo-iframe"
+                    src="https://jomidokunmain.github.io/Biomech3"
+                    title="Biomechanical Viewer"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  ></iframe>
+
+                  <!-- Option B (placeholder): replace iframe with a video, image, or three.js canvas -->
+                  <!-- <img class="demo-image" src="static/images/open_scene_placeholder.png" alt="Open scene placeholder" /> -->
+                </div>
               </div>
             </div>
           </section>
+          <!-- Optional: block diagram anchor -->
+          <section id="block-diagram" class="posemech-block">
+            <div class="demo-wrap">
+              <h1>Block Diagram & System Structure</h1>
+              <p>
+                Pipeline: Capture → 2D Keypoints → 3D Reconstruction / Mesh → Biomech
+                Estimation → Visualization & Reports.
+              </p>
+              <img
+                class="block-img"
+                src="static/images/flowchart_posemech.png"
+                alt="PoseMech block diagram"
+              />
+            </div>
+          </section>
+
+          <!-- Publications block -->
+          <section id="publications" class="posemech-pubs">
+            <div class="demo-wrap">
+              <h1>Related Publications</h1>
+              <ul class="pub-list">
+                <li>
+                  <b>Omidokun, J.</b>, Egeonu, D., Jia, B., &amp; Yang, L. (2024).
+                  <i>Leveraging digital perceptual technologies for remote perception and analysis of human biomechanical processes:
+                  A contactless approach for workload and joint force assessment.</i>
+                  arXiv preprint, arXiv:2404.01576.
+                </li>
+
+                <li>
+                  Egeonu, D., Jia, B., <b>Omidokun, J.</b>, &amp; Yang, L. (2024).
+                  <i>Biomechanical assessment of exoskeleton intervention for injured and recovering workers:
+                  A simulation study of bending tasks.</i>
+                  Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 68(1).
+                </li>
+
+                <li>
+                  <b>Omidokun, J.</b>, Egeonu, D., Jia, B., &amp; Yang, L. (2025).
+                  <i>Leveraging digital perceptual technologies for analysis of human biomechanical processes:
+                  A contactless approach for workload assessment.</i>
+                  IISE Transactions on Occupational Ergonomics and Human Factors, 1–14.
+                </li>
+
+                <!-- <li>
+                  <b>Omidokun, J.</b> (2022).
+                  <i>Design and Implementation of an Autonomous Driving System with a Deep Learning Approach on a Scaled Vehicle Platform.</i>
+                </li> -->
+
+                <li>
+                  Egeonu, D., <b>Omidokun, J.</b>, &amp; Jia, B. (2025).
+                  <i>Field-Applicable Ground Reaction Force Estimation Through Deep Learning:
+                  Enhancing Biomechanical and Ergonomic Assessments.</i>
+                  IISE Annual Conference Proceedings, 1–6.
+                </li>
+              </ul>
+
+              <!-- <p style="opacity:0.85;">
+                More on Google Scholar:
+                <a href="https://scholar.google.com/citations?user=Nl5sQbEAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+                  Jesudara Omidokun — Scholar Profile
+                </a>
+              </p> -->
+
+            </div>
+          </section>
+
+          
           <!-- <section id="force-plates">
             <div class="container">
               <div class="image-group">
@@ -727,5 +877,6 @@
     </footer>
     <script src="static/js/scripts.js"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/posemech.js"></script>
   </body>
 </html>

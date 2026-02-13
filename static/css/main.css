@@ -1,257 +1,379 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color:#00274C;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #00274c;
 }
 
 #top-section {
-    background-color: #FFCB05;
-    flex: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 5%;
-    
+  background-color: #ffcb05;
+  flex: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
 }
 
 #top-nav2 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 #top-nav2 a {
-    font-size: 18px;
-    font-family: 'Anton', sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding: 0px 10px;
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 0px 10px;
 }
 
 #top-nav {
-    position: absolute;
-    top: 30px;
-    left: 10px;
-    
-    
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
 #top-nav a {
-    font-size: 12px;
-    font-family: 'Anton', sans-serif;
-    color: rgb(0, 0, 0);
-    padding: 0px 5px;
+  font-size: 12px;
+  font-family: "Anton", sans-serif;
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
 }
 #top-nav a.active {
-    background-color: #784115;
-    padding: 0px 5px;
-    text-decoration: none;
+  background-color: #784115;
+  padding: 0px 5px;
+  text-decoration: none;
 }
 #logo {
-    padding-left: 0%;
-    
+  padding-left: 0;
 }
 #logo img {
-    padding-left: 85%;
-    width: 65%;
-
+  padding-left: 10%;
+  width: 100%;
+  max-width: 200px;
 }
 
 #banner-text p {
-    font-size: 13px;
-    font-family: 'open sans';
-    font-weight: bold;
-    margin-top: -20%;
-
+  font-size: 13px;
+  font-family: "open sans";
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 #title {
-    font-size: 20px;
-    color: #050404;
-    padding-right: 50%;
-    padding-left: 3%;
-    margin-top: -0.9%;
+  font-size: 20px;
+  color: #050404;
+  padding-right: 10%;
+  padding-left: 3%;
+  margin-top: 10px;
 }
 
 #left-section {
-    display: flex;
-    flex: 1;
-    background-color: #FFCB05;
+  display: flex;
+  flex: 1;
+  background-color: #ffcb05;
 }
 
 #left-nav-bar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
 #left-nav-bar a {
-    text-decoration: none;
-    color: #0a080e;
-    margin: 10px 50px;
+  text-decoration: none;
+  color: #0a080e;
+  margin: 10px 50px;
 }
 #left-section #has-dropdown:hover #sub-nav {
-    display: block;
+  display: block;
 }
 
 #show-video {
-    text-decoration: underline;
-    cursor: pointer;
-} 
+  text-decoration: underline;
+  cursor: pointer;
+}
 .dropdown-content {
-    display: block;
-    background-color: #FFCB05;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    list-style: none;
-    padding: 0;
-    padding-left: 0px;
-   
+  display: block;
+  background-color: #ffcb05;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  padding-left: 0px;
 }
 .top-nav a:hover {
-    background-color: #555;
-    
+  background-color: #555;
 }
 .navbar {
-    background-color: #FFCB05;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    font-size: larger;
+  background-color: #ffcb05;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
 }
 
 /* Style for list items in the dropdown menu */
 .dropdown-content li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* Change the background color of list items on hover */
-.dropdown-content a{
-    display: block;
+.dropdown-content a {
+  display: block;
 }
 
 #myDropdown a.active {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 
 #myDropdown1 a.active {
-    background-color: #2b14c1;
+  background-color: #2b14c1;
 }
 #myDropdown2 a.active {
-    background-color: #14c125;
+  background-color: #14c125;
 }
-
-
 
 /* Style for the playback speed buttons */
 .speed-button {
-    padding: 10px 10px;
-    cursor: pointer;
+  padding: 10px 10px;
+  cursor: pointer;
 }
 .speed-button button:first-child {
-    margin-left: 20px; /* Adjust the desired padding value */
+  margin-left: 20px; /* Adjust the desired padding value */
 }
- /* Style for the time display bar */
+/* Style for the time display bar */
 .video-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .speed-buttons {
-    display: flex;
-    padding-left: 20px;
+  display: flex;
+  padding-left: 20px;
 }
 
 .time-bar {
-    width: 100%;
-    height: 5px;
-    background-color: #ccc;
-    position: relative;
-    margin-top: 5px;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: 5px;
 }
 .time-bar2 {
-    width: 100%;
-    height: 5px;
-    background-color: #ccc;
-    position: relative;
-    margin-top: 5px;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: 5px;
 }
 
 #main-content {
-    flex: 8;
-    background-image: url('../webimage/michgan-big.jpg');
+  flex: 8;
+  background-image: url("../webimage/michgan-big.jpg");
 }
 #main-content4 {
-    flex: 8;
-    background-image: url('../webimage/michgan-big.jpg');
+  flex: 8;
+  background-image: url("../webimage/michgan-big.jpg");
 }
 
 #video1 {
-    width: 1080px;
-    height: 480px;
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 #video2 {
-    width: 1080px;
-    height: 480px;
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 /* For screens with a width of 768px or more */
 @media screen and (max-width: 1200px) {
-    #title {
-        font-size: 14px;
-        color: #020202;
-        padding-right: 50%;
-        margin-top: -0.5%;
-    }
-    #top-nav {
-        top: 5px;
-       
-    }
-    #top-nav a {
-        font-size: 8px;
-        font-family: 'Anton', sans-serif;
-    }
-    #top-nav2 a {
-        font-size: 10px;
-        font-family: 'Anton', sans-serif;
-    }
-    #video1 {
-        width: 50%;
-        height: 50%;
-    }
-    #video2 {
-        width: 50%;
-        height: 50%;
-    }
-    #left-nav-bar a {
+  #title {
+    font-size: 14px;
+    color: #020202;
+    padding-right: 10%;
+    margin-top: 5px;
+  }
+  #top-nav {
+    top: 5px;
+  }
+  #top-nav a {
+    font-size: 8px;
+    font-family: "Anton", sans-serif;
+  }
+  #top-nav2 a {
+    font-size: 10px;
+    font-family: "Anton", sans-serif;
+  }
+  #video1,
+  #video2 {
+    width: 100%;
+    max-width: 600px;
+  }
+  #left-nav-bar a {
+    margin: 0px 20px;
+    font-size: small;
+  }
+  .navbar {
+    font-size: medium;
+    padding: 2px;
+  }
+  .speed-button {
+    padding: 1px 1px;
+  }
+  .dropdown-content li {
+    margin-bottom: 1px;
+  }
+}
 
-        margin: 0px 50px;
-    }
-    .navbar {
-        font-size: medium;
-        padding: 2px;
-    }
-    #left-nav-bar a {
-        font-size: small;
-    }
-    .speed-button {
-        padding: 1px 1px;
-        
-    }
-    .dropdown-content li {
-        margin-bottom: 1px;
-    }
-    
-   
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  #logo img {
+    max-width: 150px;
+  }
+
+  #title {
+    font-size: 12px;
+    padding-right: 5%;
+  }
+
+  #top-nav2 a {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  #video1,
+  #video2 {
+    max-width: 100%;
+  }
+
+  .video-container {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .speed-buttons {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile - 576px */
+@media (max-width: 576px) {
+  #top-section {
+    margin-top: 2%;
+    padding: 10px;
+  }
+
+  #logo img {
+    max-width: 120px;
+    padding-left: 5%;
+  }
+
+  #title {
+    font-size: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  #top-nav a {
+    font-size: 7px;
+    padding: 0 3px;
+  }
+
+  #top-nav2 a {
+    font-size: 12px;
+    padding: 0 3px;
+  }
+
+  #left-nav-bar a {
+    margin: 5px 10px;
+    font-size: x-small;
+  }
+
+  .speed-button {
+    padding: 2px;
+    font-size: 12px;
+  }
+}
+
+/* 2K Screens */
+@media (min-width: 1920px) {
+  #logo img {
+    max-width: 300px;
+  }
+
+  #title {
+    font-size: 28px;
+  }
+
+  #top-nav a {
+    font-size: 16px;
+  }
+
+  #top-nav2 a {
+    font-size: 24px;
+  }
+
+  #video1,
+  #video2 {
+    max-width: 1600px;
+  }
+
+  .navbar {
+    font-size: x-large;
+  }
+
+  #left-nav-bar a {
+    font-size: large;
+    margin: 15px 60px;
+  }
+}
+
+/* 4K Screens */
+@media (min-width: 2560px) {
+  #logo img {
+    max-width: 400px;
+  }
+
+  #title {
+    font-size: 32px;
+  }
+
+  #top-nav a {
+    font-size: 18px;
+  }
+
+  #top-nav2 a {
+    font-size: 28px;
+  }
+
+  #video1,
+  #video2 {
+    max-width: 2000px;
+  }
+
+  .navbar {
+    font-size: xx-large;
+  }
+
+  #left-nav-bar a {
+    font-size: x-large;
+    margin: 20px 80px;
+  }
 }
