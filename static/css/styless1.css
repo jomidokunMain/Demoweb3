@@ -1076,8 +1076,9 @@ table.gsc-search-box td.gsc-input {
   flex-direction: row;
   font-size: 1.125rem;
   font-weight: 400;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
+  padding-left: 1.5rem;
 }
 .faculty .main-menu {
   justify-content: flex-start;
@@ -3114,9 +3115,11 @@ ul.ab-top-menu li {
 .text-section p {
   text-align: left;
   padding-left: clamp(20px, 5vw, 5in);
-  padding-right: clamp(20px, 5vw, 35%);
+  padding-right: clamp(20px, 5vw, 120px);
   font-size: clamp(14px, 1.2vw, 16px);
   font-family: "open sans", "sans-serif";
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 .text-section2 {
   background: rgba(164, 159, 159, 0.8);
@@ -3132,6 +3135,8 @@ ul.ab-top-menu li {
   font-size: clamp(24px, 3vw, 38px);
   color: #8c8b8b;
   padding-top: 4%;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 .grid-container {
   display: grid;
@@ -3140,6 +3145,7 @@ ul.ab-top-menu li {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1200px;
+  align-items: start;
 }
 
 .grid-item {
@@ -3149,6 +3155,8 @@ ul.ab-top-menu li {
   padding: 20px 10px;
   font-size: clamp(14px, 1.2vw, 16px);
   font-family: "open sans", "sans-serif";
+  width: 100%;
+  max-width: 100%;
 }
 .grid-item1 {
   padding: 20px;
@@ -3156,7 +3164,8 @@ ul.ab-top-menu li {
   border: 0px solid #ccc; /* Add a border for separation (optional) */
   word-wrap: break-word; /* Text wrap for long content */
   grid-gap: 15px; /* Adjust the spacing between cells */
-  width: 500px; /* Adjust the container width as needed */
+  width: 100%;
+  max-width: 100%;
   font-size: 16px;
   font-family: "open sans", "sans-serif";
 }
@@ -3235,14 +3244,14 @@ ul.ab-top-menu li {
   .main-logo img {
     width: fit-content;
     padding-left: 1%;
-    margin-top: -50%;
+    margin-top: 0;
   }
   .logo-text {
-    width: 40%; /* Width of the logo */
+    width: 90%;
     color: #8c8b8b; /* Change to your desired color */
     font-size: 22px;
     font-weight: bold;
-    margin-top: -15%;
+    margin-top: 20px;
     margin-left: 4%;
   }
   .text-section h1 {
@@ -3260,8 +3269,8 @@ ul.ab-top-menu li {
   }
   .text-section2 {
     background: rgba(164, 159, 159, 0.8);
-    margin-top: -10%;
-    padding: px;
+    margin-top: 0;
+    padding: 20px;
     margin: 10px;
   }
 
