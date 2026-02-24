@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Demo</title>
@@ -544,7 +545,7 @@
                     class="demo-video"
                   >
                     <!-- Replace with your actual 2D video -->
-                    <source src="static/videos/posemech_2d.mp4" type="video/mp4" />
+                    <source src="static/vids/2dcapture1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -561,7 +562,7 @@
                   >
                     <!-- Replace with your actual overlay video -->
                     <source
-                      src="static/videos/posemech_mesh_overlay.mp4"
+                      src="static/vids/3dmesh_right1.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -573,9 +574,29 @@
                   <div class="panel-title plot-title-row">
                     <span>Biomech Signal Plots</span>
                     <div class="plot-controls">
-                      <button class="plot-btn active" data-plot="hip">Hip Flexion</button>
-                      <button class="plot-btn" data-plot="knee">Knee Flexion</button>
-                      <button class="plot-btn" data-plot="l5s1">L5/S1 Moment</button>
+                      <button class="plot-btn active"
+                              data-sto="static/sto/angle_data.sto"
+                              data-cols="hip_flexion_r,hip_flexion_l">
+                        Hip Flexion
+                      </button>
+                      <button class="plot-btn"
+                              data-sto="static/sto/angle_data.sto"
+                              data-cols="knee_angle_r,knee_angle_l">
+                        Knee Angle
+                      </button>
+                      <button class="plot-btn"
+                              data-sto="static/sto/Elbow_Flexion.sto"
+                              data-cols="elbow_flex_r,elbow_flex_l">
+                        Elbow Flexion
+                      </button>
+                      
+                      <button class="plot-btn"
+                              data-sto="static/sto/angle_data.sto"
+                              data-cols="l5s1_moment_r,l5s1_moment_l">
+                        L5/S1 Moment
+                      </button>
+                      <!-- <button class="plot-btn" data-plot="knee">Knee Flexion</button>
+                      <button class="plot-btn" data-plot="l5s1">L5/S1 Moment</button> -->
                     </div>
                   </div>
                   <div id="plotArea" class="plot-area"></div>
@@ -585,17 +606,36 @@
                 <div class="demo-panel">
                   <div class="panel-title">Open Scene (Biomech Viewer)</div>
 
+                    <!-- <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+                      src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" 
+                      poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y">
+                    </model-viewer> -->
+
                   <!-- Option A: iframe to an existing web-based viewer you host -->
-                  <iframe
+                  <!-- <iframe
                     class="demo-iframe"
                     src="https://jomidokunmain.github.io/Biomech3"
                     title="Biomechanical Viewer"
                     loading="lazy"
                     referrerpolicy="no-referrer"
-                  ></iframe>
+                  ></iframe> -->
 
                   <!-- Option B (placeholder): replace iframe with a video, image, or three.js canvas -->
                   <!-- <img class="demo-image" src="static/images/open_scene_placeholder.png" alt="Open scene placeholder" /> -->
+                   <video
+                    id="vidScene"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="demo-video"
+                  >
+                    <!-- Replace with your actual overlay video -->
+                    <source
+                      src="static/vids/opensim_video.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
