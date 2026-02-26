@@ -66,7 +66,7 @@
 }
 
 .container1 img {
-  width: 100%;
+  width: 80%;
   height: auto;
   color: #fff;
   box-sizing: border-box;
@@ -719,5 +719,59 @@
 
   .heading2 a {
     font-size: 48px;
+  }
+}
+
+/* PoseMech intro alignment tweak: keep size, move image slightly right */
+#intro .container1.posemech-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#intro .container1.posemech-intro > .posemech-media {
+  float: none;
+  width: 100%;
+  margin: 0;
+  transform: translateX(18px) translateY(22px);
+  flex: 0 1 50%;
+}
+
+#intro .container1.posemech-intro > .posemech-media img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+#intro .posemech-image-caption {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+#intro .container1.posemech-intro > .text1 {
+  float: none;
+  width: auto;
+  max-width: none;
+  padding: 0 20px;
+  margin-top: -6px;
+  flex: 1 1 50%;
+}
+
+@media (max-width: 900px) {
+  #intro .container1.posemech-intro {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #intro .container1.posemech-intro > .posemech-media {
+    transform: none;
+    max-width: 100%;
+  }
+
+  #intro .container1.posemech-intro > .text1 {
+    margin-top: 0;
+    padding: 0 10px;
   }
 }

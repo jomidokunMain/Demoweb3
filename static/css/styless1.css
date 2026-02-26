@@ -1076,9 +1076,9 @@ table.gsc-search-box td.gsc-input {
   flex-direction: row;
   font-size: 1.125rem;
   font-weight: 400;
-  justify-content: flex-start;
+  justify-content: left;
   list-style: none;
-  padding-left: 1.5rem;
+  padding-left: 25%;
 }
 .faculty .main-menu {
   justify-content: flex-start;
@@ -3129,12 +3129,14 @@ ul.ab-top-menu li {
 }
 .text-section2 p {
   text-align: left;
-  padding-left: clamp(20px, 5vw, 5in);
+  padding: 3%;
+  padding-left: 41%;
+  /* padding-left: clamp(500px, 200vw, 5in); */
   font-family: "open sans", "sans-serif";
   margin-top: 6%;
   font-size: clamp(24px, 3vw, 38px);
   color: #8c8b8b;
-  padding-top: 4%;
+  /* padding-top: 0%; */
   line-height: 1.35;
   overflow-wrap: anywhere;
 }
@@ -3159,8 +3161,10 @@ ul.ab-top-menu li {
   max-width: 100%;
 }
 .grid-item1 {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: left;
+  padding-top: 60%;
+  padding-left: 0%;
   border: 0px solid #ccc; /* Add a border for separation (optional) */
   word-wrap: break-word; /* Text wrap for long content */
   grid-gap: 15px; /* Adjust the spacing between cells */
@@ -3611,5 +3615,61 @@ ul.ab-top-menu li {
 
   .team-members {
     margin-left: 8%;
+  }
+}
+
+/* Home hero centering */
+.main-content .main-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content .main-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.main-content .logo-text {
+  width: min(90%, 700px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  text-align: center;
+  font-size: clamp(24px, 2vw, 38px);
+}
+
+/* Home: Key Features pairing (title over description) */
+.text-section2 .grid-item1 {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 901px) {
+  .text-section2 .grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  .text-section2 .grid-container > .grid-item {
+    grid-row: 1;
+  }
+
+  .text-section2 .grid-container > .grid-item1 {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-section2 .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .text-section2 .grid-container > .grid-item,
+  .text-section2 .grid-container > .grid-item1 {
+    grid-row: auto;
   }
 }
